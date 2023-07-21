@@ -1,0 +1,131 @@
+.tv__navbar {
+   height: 120px;
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+
+   background-color: #F5F5F7;
+   font-size: 0.8rem;
+
+   padding-bottom: 1rem;
+}
+
+.tv__navbar ul {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+
+   gap: 2rem;
+   color: #000;
+   list-style-type: none;
+}
+
+.tv__navbar li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.8rem;
+   text-align: center;
+}
+
+.tv__hero__1__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.tv__hero__1__container div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+
+   text-align: center;
+}
+
+.tv__hero__1__container .tv__title > p {
+   max-width: 980px;
+   color: #86868B;
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+
+.tv__hero__1__container .tv__title h2 {
+   font-weight: 600;
+   font-size: 6rem;
+   line-height: 0.9;
+}
+
+.tv__hero__2__container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+
+   margin: 7rem 0;
+}
+
+.tv__hero__2__container > div {
+   width: 654px;
+   height: 800px;
+   border-radius: 30px;
+
+
+   background-color: #fff;
+   background-repeat: no-repeat;
+   background-position: bottom;
+
+   display: flex;
+   justify-content: center;
+
+   text-align: center;
+}
+
+.tv__hero__2__container .tv__hero__2__box1 {
+   background-image: url(../../components/tv/images/hero2/higher_definition__hfivribdc3ue_large.png);
+}
+
+.tv__hero__2__container .tv__hero__2__box2 {
+   background-image: url(../../components/tv/images/hero2/your_home_at_your_command__b1w2tomy2wia_large.jpg);
+   background-position: bottom left;
+}
+
+.tittle__box1, .tittle__box2 {
+   width: 364px;
+   height: 270px;
+   margin: 1.5rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 1rem;
+}
+
+.tittle__box1 h3, .tittle__box2 h3 {
+   font-size: 2rem;
+}
+
+.tittle__box1, .tittle__box2 p {
+   font-size: 1rem;
+}
+
+.tv__hero__2__container button {
+   border: none;
+   background-color: #06c;
+   color: #fff;
+
+   width: 100px;
+
+   font-size: 1rem;
+
+   border-radius: 980px;
+
+   padding: 7px 15px;
+   margin: 1rem;
+   cursor: pointer;
+}

@@ -1,0 +1,191 @@
+.airpods {
+   background-color: #FAFAFB;
+}
+
+.airpods__navbar {
+   height: 180px;
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+
+   background-color: #FFFFFF;
+   font-size: 0.8rem;
+
+   padding-bottom: 1rem;
+}
+
+.airpods ul.navbar__ul :nth-child(4) {
+   padding-bottom: 0.9rem;
+}
+
+.airpods .airpods__hero__1 {
+   width: 100%;
+   height: 850px;
+}
+
+.airpods .airpods__hero__1__content {
+   width: 1520px;
+   height: 820px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+   border-radius: 20px;
+   color: #fff;
+   text-align: center;
+
+   background-image: url(../../components/airpods/images/hero1/hero_startframe__f6btrn4bhpyu_large.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   margin: auto;
+   margin-top: 30px;
+}
+
+.airpods .airpods__hero__1__content > div {
+   display: flex;
+   flex-direction: column;
+   gap: 7rem;
+
+   padding-bottom: 2rem;
+}
+
+.airpods__hero1__title {
+   padding-bottom: 2rem;
+
+}
+
+.airpods__hero1__title h1 {
+   font-size: 8rem;
+}
+
+.airpods__hero1__title p {
+   font-size: 1.3rem;
+}
+
+.airpods .airpods__buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+
+   color: #fff;
+
+   margin-top: 7rem;
+}
+
+.airpods .airpods__buttons > button {
+   min-width: 26px;
+   padding: 12px 22px;
+
+   border-radius: 980px;
+   border: none;
+   background-color: #fff;
+
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+.airpods .airpods__buttons > button:hover {
+   background-color: #e3e3e4;
+}
+
+.airpods .airpods__buttons > button:active {
+   background-color: #efefef;
+}
+
+.airpods .airpods__buttons > a {
+   color: #fff;
+   font-size: 1.2rem;
+}
+
+.airpods .airpods__hero__2  .airpods__hero__2__content {
+   background-image: url(../../components/airpods/images/hero2/airpods_3rd_gen__dhy5bknhvtqq_large.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+
+   color: #000;
+}
+
+.airpods .airpods__hero__2 .airpods__buttons__hero2 button {
+   background-color: #06c;
+   color: #fff;
+}
+
+.airpods .airpods__hero__2 .airpods__buttons__hero2 button:hover {
+   background-color: #1280ee;
+}
+
+.airpods .airpods__hero__2 .airpods__buttons__hero2 button:active {
+   background-color: #06c;
+}
+
+.airpods .airpods__hero__2 .airpods__buttons__hero2 a {
+   color: #06c;
+}
+
+.airpods .airpods__hero__3 .airpods__hero__3__content {
+   background-image: url(../../components/airpods/images/hero3/hero_3_airpods_second_gen.jpg);
+   background-position: 45%;
+   background-size: contain;
+   background-color: #fff;
+}
+
+.airpods .airpods__hero__4 .airpods__hero__4__content {
+   background-image: url(../../components/airpods/images/hero4/airpods_max_logo__bdgdixidcqcy_large.jpg);
+   background-position: 45%;
+   background-size: auto;
+   background-color: #fff;
+
+   position: relative;
+}
+
+.airpods .airpods__hero__4 .airpods__hero__4__content .airpods__buttons {
+   margin-top: 20px;
+}
+
+.airpods .airpods__hero__4 .airpods__hero__4__content .airpods__hero4__title p {
+   line-height: 1.8rem;
+}
+
+.airpods__hero__4 {
+   position: relative;
+}
+
+.airpods .airpods__hero4__title {
+   position: relative;
+}
+
+.airpods__max__img {
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+
+   margin: 0;
+}
+
+.airpods__max__img img {
+   max-width: 535px;
+   max-height: 592px;
+}
+
+.airpods__hero__4 button {
+   cursor: pointer;
+   z-index: 4;
+}
+
+.airpods__hero__4 a {
+   cursor: pointer;
+   z-index: 4;
+}

@@ -1,0 +1,32 @@
+.carousel__container__2 .carousel__item__2 {
+
+   width: 480px;
+   height: 500px;
+}
+
+.carousel__container__2 .carousel :first-child {
+   margin-left: 19%;
+}
+
+@media (max-width: 1000px) {
+   .carousel__container__2 .carousel :first-child {
+      margin-left: 0;
+   }
+
+   .carousel__container__2 .carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      height: 100%;
+
+      overflow: 0;
+   }
+}
+
+@media (max-width: 700px) {
+   .carousel__container__2 .carousel :first-child {
+
+   }
+}

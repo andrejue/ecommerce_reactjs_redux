@@ -1,0 +1,313 @@
+main {
+   padding-top: 44px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   background-color: #F5F5F7;
+}
+
+.hero__1__store__container {
+   width: 980px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content__1__flex {
+   padding-bottom: 40px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.content__1__title {
+   display: flex;
+
+   font-size: 1.8rem;
+   line-height: 3rem;
+
+   padding: 80px 0 64px;
+}
+
+.content__1__title span {
+   color: #6E6E73;
+}
+
+.content__1__aside {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1rem;
+
+   font-size: 0.9rem;
+}
+
+.content__1__aside img {
+   width: 40px;
+}
+
+.content__1__aside div {
+   display: flex;
+}
+
+.content__1__aside__text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   font-weight: 500;
+}
+
+.main__store__container > a {
+   color: #06c;
+}
+
+.main__store__container a:hover {
+   text-decoration: underline;
+}
+
+.main__store__container a:visited {
+   color: #06c;
+}
+
+.content__1__itens .images{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   font-size: 0.9rem;
+
+   width: 100%;
+   padding-bottom: 70px;
+}
+
+.content__1__itens .item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.content__1__itens .images img {
+   height: 75px;
+}
+
+.hero__2__tittle {
+   font-size: 1.2rem;
+}
+
+.hero__2__tittle span {
+   color: #6E6E73;
+}
+
+.content__2__flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   height: 564px;
+   width: 980px;
+}
+
+.content__2__flex .item__1 {
+   width: 478px;
+   height: 500px;
+
+   border-radius: 30px;
+   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+
+   background-image: url(../images/store-card-50-specialist-help-202305.jpg);
+   background-repeat: no-repeat;
+   background-position: bottom;
+
+   padding: 30px;
+}
+
+.content__2__flex .item__1 h3 {
+   font-size: 1.8rem;
+}
+
+.item__1 p {
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   font-weight: 500;
+   color: #6E6E73;
+
+   padding-bottom: 16px;
+}
+
+.item__2 h3, .item__3 h3 {
+   padding: 30px;
+   padding-top: 60px;
+
+   font-size: 1.4rem;
+}
+
+.content__2__flex .container__itens {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   width: 478px;
+   height: 500px;
+}
+
+.content__2__flex .item__2 {
+   height: 238px;
+   width: 100%;
+
+   border-radius: 30px;
+   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+
+   background-image: url(../images/store-card-25-apps-202108.jpg);
+}
+
+.content__2__flex .item__3 {
+   height: 238px;
+   width: 100%;
+
+   border-radius: 30px;
+   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+
+   background-image: url(../images/store-card-25-genius-202108.jpg);
+}
+
+.reasons {
+   width: 980px;
+   height: 300px;
+
+   display: flex;
+   flex-direction: column;
+
+   font-size: 1.5rem;
+
+   margin-top: 1rem;
+}
+
+.reasons span {
+   color: #6E6E73;
+}
+
+.reasons p {
+   font-size: 1.5rem;
+   font-weight: 600;
+
+   padding-top: 15px;
+}
+
+.reasons__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   padding-top: 1rem;
+}
+
+.reason1 {
+   width: 312px;
+   height: 238px;
+   background-color: #fff;
+
+   border-radius: 30px;
+   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+
+   padding: 30px;
+}
+
+.reason2 {
+   width: 312px;
+   height: 238px;
+   background-color: #fff;
+
+   border-radius: 30px;
+   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+
+   padding: 30px;
+}
+
+.reason3 {
+   width: 312px;
+   height: 238px;
+   background-color: #fff;
+
+   border-radius: 30px;
+   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+
+   padding: 30px;
+}
+
+.reason3 span {
+   color: #06c;
+}
+
+@media (max-width: 1000px) {
+
+   .content__1__flex {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+
+   .content__1__itens {
+      width: 900px;
+   }
+
+   .hero__2__store__container {
+      display: flex;
+      flex-direction: column;
+
+      gap: 3rem;
+
+      border: 1px solid orange;
+   }
+
+   .content__2__flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      width: auto;
+      height: auto;
+
+      gap: 3rem;
+   }
+
+   .reasons {
+      display: none;
+   }
+}
+
+@media (max-width: 850px) {
+   .content__1__itens {
+      display: none;
+   }
+}
+
+@media (max-width: 730px) {
+   .content__1__flex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .content__1__flex h1 {
+      font-size: 2rem;
+      line-height: 3rem;
+   }
+}
+
+@media (max-width: 501px) {
+   .content__2__flex {
+      width: 440px;
+      height: auto;
+
+      gap: 3rem;
+   }
+}

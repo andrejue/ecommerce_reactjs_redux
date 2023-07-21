@@ -1,0 +1,144 @@
+.carousel__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   width: 100%;
+
+   margin-top: 40px;
+   margin-bottom: 70px;
+
+   position: relative;
+}
+
+.carousel__container .carousel {
+
+   overflow-x: hidden;
+   display: flex;
+   scroll-behavior: smooth;
+   align-items: center;
+   width: 100%;
+   height: 530px;
+
+}
+
+.carousel__container .carousel :first-child {
+   margin-left: 10%;
+}
+
+.carousel::-webkit-scrollbar {
+   display: none;
+ }
+
+ .carousel {
+   display: flex;
+}
+
+.carousel__container .title h2 {
+   font-size: 1.8rem;
+   padding-bottom: 40px;
+}
+
+.carousel__container .title .carousel__1 {
+   margin-left: -36%;
+}
+
+.carousel__container span {
+   color: #6E6E73;
+}
+
+.carousel__item {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+   width: 400px;
+   height: 500px;
+
+   padding: 30px;
+
+   border-radius: 30px;
+   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+   margin-right: 20px;
+}
+
+.carousel div {
+   transition: all .3s cubic-bezier(0,0,.5,1) !important;
+}
+
+.carousel__item:hover {
+   transform: scale(1.01);
+}
+
+.item__name {
+   font-size: 0.8rem;
+   text-transform: uppercase;
+   color: #6E6E73;
+}
+
+.carousel__item h3 {
+   font-size: 1.6rem;
+}
+
+.carousel__container .item__dark {
+   color: #fff;
+}
+
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-prev-arrow {
+  left: 10px;
+}
+
+.custom-next-arrow {
+  right: 10px;
+}
+
+@media (max-width: 1000px) {
+   .title {
+      text-align: center;
+   }
+
+   .carousel__container .title .carousel__1 {
+      margin-left: 0;
+   }
+
+
+   .carousel__container .carousel :first-child {
+      margin-left: 7%;
+   }
+}
+
+@media (max-width: 900px) {
+
+   .carousel__container .carousel :first-child {
+      margin-left: 5%;
+   }
+}
+
+@media (max-width: 850px) {
+
+   .carousel__container .carousel :first-child {
+      margin-left: 1%;
+   }
+}
+
+@media (max-width: 580px) {
+   .title h2 {
+      font-size: 1.4rem;
+   }
+
+   .carousel__container .carousel {
+      margin-left: 20.5%;
+   }
+}

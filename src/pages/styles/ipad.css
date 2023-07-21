@@ -1,0 +1,257 @@
+.ipad__navbar {
+   height: 180px;
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+
+   background-color: #000;
+
+   font-size: 0.8rem;
+}
+
+.ipad__navbar ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   gap: 2rem;
+   color: #fff;
+   list-style-type: none;
+}
+
+.ipad__navbar li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.8rem;
+}
+
+.ipad__navbar span {
+   font-size: 0.6rem;
+   color: orangered;
+   position: absolute;
+   top: 145px;
+}
+
+.ipad__ribbon {
+   width: 100%;
+   height: 53px;
+
+   background-color: #1D1D1F;
+   color: #fff;
+   letter-spacing: -.01em;
+   font-size: 0.8rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.ipad a {
+   text-decoration: none;
+   color: #06c;
+}
+
+.ipad a:hover {
+   text-decoration: underline;
+}
+
+.ipad__hero__1 {
+   width: 100%;
+   height: 849px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: #000;
+}
+
+.ipad__hero__img1 {
+   width: 40%;
+   height: 60%;
+
+   background-image: url(../../../src/components/ipad/images/hero1/fcp_ipad_hero__e663fdl2htea_large.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: left;
+}
+
+.ipad__hero__img2 {
+   width: 40%;
+   height: 60%;
+
+   background-image: url(../../components/ipad/images/hero1/lp_ipad_hero__ec9vtoqzs0a6_large.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+.ipad__hero__title {
+   width: 20%;
+   color: #fff;
+   text-align: center;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.ipad__hero__title p {
+   font-size: 1.6rem;
+   font-weight: 600;
+
+   margin-bottom: 1.8rem;
+}
+
+.ipad__hero__title h1 {
+   font-size: 3.5rem;
+
+   margin-bottom: 2rem;
+}
+
+.ipad__hero__title .know__more {
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+
+   margin-bottom: 1rem;
+}
+
+.play__svg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.ipad__hero__2 {
+   position: relative;
+   width: 100%;
+   height: 820px;
+
+   background-color: #000;
+   background-image: url(../../components/ipad/images/hero2/ipad_pro_hero__bh3eq6sqfjw2_large.jpg);
+   background-repeat: no-repeat;
+   background-position: 78%;
+}
+
+.ipad__hero__2 .ipad__pro__title {
+   width: 250px;
+   height: 257px;
+
+   position: absolute;
+   top: 35vh;
+   left: 20%;
+
+   color: #fff;
+   text-align: center;
+}
+
+.ipad__hero__2 span {
+   font-size: 0.8rem;
+   color: orangered;
+}
+
+.ipad__hero__2 h1 {
+   font-size: 3.5rem;
+}
+
+.ipad__hero__2 .m2__logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   font-size: 1.3rem;
+}
+
+.ipad__hero__2 .m2__logo img {
+   width: auto;
+}
+
+.ipad__hero__2 .ipad__buy__btn {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.ipad__hero__2 .ipad__buy__btn button {
+   border: none;
+   background-color: #06c;
+   color: #fff;
+
+   width: 100px;
+
+   font-size: 1rem;
+
+   border-radius: 980px;
+
+   padding: 7px 15px;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+
+.ipad__hero__2 .ipad__buy__btn button:active {
+   background-color: rgb(0, 85, 170);
+}
+
+.ipad__hero__3 {
+   position: relative;
+
+   background-color: #fff;
+   background-image: url(../../components/ipad/images/hero3/ipad_hero__d0tgmaq6shm6_large.jpg);
+   background-repeat: no-repeat;
+   background-position: 40%;
+}
+
+.ipad__hero__3 .ipad__pro__title {
+   color: #000 !important;
+
+   top: 33vh;
+   left: 60vw;
+}
+
+.ipad__hero__3 h4 {
+   margin-bottom: 1rem;
+   font-size: 1.4rem;
+}
+
+.ipad__hero__4 {
+   width: 100%;
+   height: 638px;
+
+   background-color: #F5F5F7;
+
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.ipad__hero__4 .ipad__hero__4__container1 {
+   height: 100%;
+
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+
+   background-image: url(../../components/ipad/images/hero4/ipados17__fbavkgtxnxyu_large.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.ipad__hero__4 .ipad__hero4__title {
+   margin-top: 2rem;
+   text-align: center;
+}
+
+.ipad__hero__4 .ipad__hero4__title h2 {
+   font-size: 3rem;
+   margin-bottom: 1.2rem;
+}
+
+.ipad__hero__4 .ipad__hero4__title p {
+   margin-bottom: 0.8rem;
+   font-size: 1.2rem;
+}

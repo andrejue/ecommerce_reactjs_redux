@@ -1,0 +1,189 @@
+.iphone a {
+   text-decoration: none;
+   color: #06c;
+}
+
+.iphone a:hover {
+   text-decoration: underline;
+}
+
+.iphone__navbar {
+   height: 180px;
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+
+   background-color: #FBFBFD;
+
+   font-size: 0.8rem;
+}
+
+.iphone__navbar ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   gap: 2rem;
+   color: #000;
+   list-style-type: none;
+}
+
+.iphone__navbar li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.8rem;
+}
+
+.iphone__navbar span {
+   font-size: 0.6rem;
+   color: orangered;
+   position: absolute;
+   top: 145px;
+}
+
+.iphone__ribbon {
+   width: 100%;
+   height: 53px;
+
+   background-color: #F5F5F7;
+   color: #000;
+   letter-spacing: -.01em;
+   font-size: 0.8rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.iphone__hero__1 {
+   width: 100%;
+   height: 95vh;
+
+   display: flex;
+   justify-content: center;
+
+   background-image: url(../../components//iphone/images/hero1/hero_iphone_14__de41900yuggi_large.jpg);
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+
+.iphone .iphone__hero__title {
+   margin-top: 3rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   gap: 1.2rem;
+}
+
+.iphone__hero__title span {
+   color: #808080;
+}
+
+.iphone__hero__title h4 {
+   font-size: 1.6rem;
+}
+
+.iphone__hero__title h1 {
+   font-size: 3rem;
+}
+
+.iphone__hero__title p {
+   font-size: 1.3rem;
+}
+
+.buy__btn__div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.4rem;
+
+   margin-top: 1rem;
+}
+
+.buy__btn__div button {
+   background-color: #06c;
+   border: none;
+   border-radius: 980px;
+   cursor: pointer;
+
+   font-size: 1rem;
+
+   color: #fff;
+
+   padding: 8px 16px;
+}
+
+.iphone button:active {
+   background-color: rgb(0, 85, 170);
+}
+
+.iphone .iphone__hero__2 {
+   background-color: #000;
+   background-image: url(../../components//iphone/images/hero2/hero_iphone_14_pro__e8bufymdlseq_large.jpg);
+   background-repeat: no-repeat;
+   background-position: bottom;
+
+   color: #fff;
+
+   display: flex;
+   justify-content: center;
+
+   width: 100%;
+   height: 95vh;
+
+   margin-top: 2rem;
+}
+
+.iphone .iphone__hero__3 {
+   width: 100%;
+   height: 95vh;
+
+   display: flex;
+   justify-content: center;
+
+   background-color: #FBFBFD;
+   background-image: url(../../components//iphone/images/hero3/iphone_se_hero__gd586pazxqqa_large.jpg);
+   background-repeat: no-repeat;
+   background-position: 66.5%;
+   background-size: contain;
+
+   margin-top: 1rem;
+   position: relative;
+}
+
+.iphone__hero__3 .title__se__absolute {
+   position: absolute;
+   top: 45%;
+   left: 20%;
+}
+
+.iphone__hero__3 .iphone__hero__title_se {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   gap: 1.4rem;
+
+   text-align: center;
+}
+
+.iphone__hero__3 .iphone__hero__title_se h1 {
+   font-size: 2.9rem;
+   line-height: 1.0734933333;
+   font-weight: 700;
+   letter-spacing: -0.003em;
+
+   color: transparent;
+
+   background-clip: text;
+   background-image: linear-gradient(to right, #2541A5, #385FDA);
+}
+
+.iphone__hero__title_se p {
+   font-size: 1.3rem;
+}

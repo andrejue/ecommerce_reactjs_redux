@@ -1,39 +1,39 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: SF-Regular;
+  src: url('/public/fonts/SFUIDisplay-Regular.otf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: SF-Light;
+  src: url('/public/fonts/SFUIDisplay-Light.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  overflow: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html {
+  font-family: SF-Regular;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+body {
+  overflow-x: hidden;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+header {
+  font-family: SF-Light;
+}
+
+a {
+  text-decoration: none;
+  color: #06c;
+}
+
+a:hover {
+   text-decoration: underline;
 }

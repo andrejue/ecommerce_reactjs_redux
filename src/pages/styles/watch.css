@@ -1,0 +1,181 @@
+.watch__navbar {
+   height: 180px;
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+
+   background-color: #F5F5F7;
+   font-size: 0.8rem;
+
+   padding-bottom: 1rem;
+}
+
+.watch__navbar ul.navbar__ul :nth-child(5), ul.navbar__ul :nth-child(6), ul.navbar__ul :nth-child(7), ul.navbar__ul :nth-child(8), ul.navbar__ul :nth-child(9), ul.navbar__ul :nth-child(10) {
+   padding-bottom: 0.9rem;
+}
+.watch__navbar ul {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+
+   gap: 2rem;
+   color: #000;
+   list-style-type: none;
+}
+
+
+.watch__navbar li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.8rem;
+   text-align: center;
+}
+
+.watch__navbar span {
+   font-size: 0.6rem;
+   color: #ff4500;
+   position: absolute;
+   top: 166px;
+}
+
+.watch__ribbon {
+   width: 100%;
+   height: 53px;
+
+   background-color: #FBFBFD;
+   color: #000;
+   letter-spacing: -.01em;
+   font-size: 0.8rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.watch__hero__1 {
+   width: 100%;
+   height: 105vh;
+
+   display: flex;
+   justify-content: center;
+
+   background-color: #F5F5F7;
+   background-image: url(../../components/watch/images/hero1/hero_ultra__ej2pfpkgr2ie_large.jpg);
+   background-repeat: no-repeat;
+   background-position: center 80%;
+}
+
+.watch button:active {
+   background-color: rgb(0, 85, 170);
+}
+
+.watch .watch__hero__title {
+   margin-top: 2rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   text-align: center;
+
+   gap: 1.2rem;
+}
+
+.watch .watch__logo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.watch .watch__logo > div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.2rem;
+
+   letter-spacing: 0.2rem;
+}
+
+.watch .watch__logo img {
+   width: 1.5rem;
+}
+
+.watch .watch__logo .ultra {
+   color: #FF6B22;
+
+   letter-spacing: 0.2rem;
+   font-size: 0.8rem;
+   font-weight: 600;
+
+   margin-top: -1rem;
+}
+
+.watch__hero__title h4 {
+   font-size: 1.6rem;
+}
+
+.watch__hero__title h1 {
+   font-size: 3rem;
+}
+
+.watch__hero__title p {
+   font-size: 1.3rem;
+}
+
+.watch__hero__2 {
+   width: 100%;
+   height: 775px;
+
+   color: #fff;
+
+   background-color: #000;
+   background-image: url(../../components/watch/images/hero2/tile_s8__fwgxo353ney6_large.jpg);
+   background-repeat: no-repeat;
+   background-position: 30%;
+
+   position: relative;
+}
+
+.watch__hero__2 > div {
+   width: 426px;
+   height: 400px;
+
+   position: absolute;
+   left: 53%;
+   top: 25%;
+}
+
+.watch__hero__2 .series__8, .watch__hero__3 .se {
+   margin-top: 1rem;
+   color: #FF6B22;
+
+   letter-spacing: 0.2rem;
+   font-size: 0.8rem;
+   font-weight: 600;
+}
+
+.watch__hero__3 {
+   width: 100%;
+   height: 775px;
+
+   color: #000;
+
+   background-color: #F5F5F7;
+   background-image: url(../../components/watch/images/hero3/tile-watch-se__bxgdwpdx3whe_large.jpg);
+   background-repeat: no-repeat;
+   background-position: 70%;
+
+   position: relative;
+}
+
+.watch__hero__3 > div {
+   width: 426px;
+   height: 400px;
+
+   position: absolute;
+   right: 53%;
+   top: 25%;
+}
