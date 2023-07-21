@@ -179,3 +179,54 @@
    right: 53%;
    top: 25%;
 }
+
+@media (max-width: 1000px) {
+   .watch__hero__3 {
+      background-image: url(../../components/watch/images/hero3/tile-watch-se__bxgdwpdx3whe_medium.jpg);
+      background-position: right;
+   }
+
+   .watch__hero__2 {
+      background-image: url(../../components/watch/images/hero2/tile_s8__fwgxo353ney6_medium.jpg);
+
+   }
+
+   .watch__navbar ul {
+      gap: 1rem;
+   }
+}
+
+@media (max-width: 853px) {
+
+   .watch__navbar ul {
+      gap: 0.6rem;
+   }
+
+   .watch__hero__2 {
+      background-position: bottom;
+   }
+
+   .watch__hero__1, .watch__hero__2, .watch__hero__3 {
+      display: flex;
+      justify-content: center;
+   }
+
+   .watch__hero__2 > div, .watch__hero__3 > div {
+      position: initial;
+   }
+
+   .watch__hero__3 {
+      background-position: bottom;
+   }
+}
+
+@media (max-width: 790px) {
+
+   .watch__navbar {
+      display: none;
+   }
+
+   .watch__ribbon {
+      display: none;
+   }
+}

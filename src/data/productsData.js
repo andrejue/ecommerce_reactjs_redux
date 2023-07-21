@@ -24,6 +24,7 @@ const products = [
       id:1,
       name: 'MacBook Air',
       img: img1,
+      description: 'GPU de até 10 núcleos',
       op1: {
          name:'MacBook Air 13 polegadas (chip M1)',
          img: img1,
@@ -43,6 +44,7 @@ const products = [
       id:2,
       name: 'MacBook Pro',
       img: img2,
+      description: 'Com telas de 13 e 16 polegadas.',
       op1: {
          name:'MacBook Pro de 13 pol.',
          img: img2,
@@ -61,6 +63,7 @@ const products = [
       id:3,
       name: 'iMac',
       img: img3,
+      description: 'Até 16 GB de memória unificada.',
       op1: {
          name:'iMac de 24 pol - 8 GB unificada',
          img: img3,
@@ -79,6 +82,7 @@ const products = [
       id:4,
       name: 'Mac mini',
       img: img4,
+      description: 'Com chip M2 e até 16 GB de memória unificada.',
       op1: {
          name:'Mac mini - chip M2 e 8 GB',
          img: img4,
@@ -97,6 +101,7 @@ const products = [
       id:5,
       name: 'Mac Studio',
       img: img5,
+      description: 'Memória unificada de até 64 GB.',
       op1: {
          name:'Mac Studio CPU de 12 núcleos e GPU de 30 núcleos',
          img: img5,
@@ -115,6 +120,7 @@ const products = [
       id:6,
       name: 'Mac Pro',
       img: img6,
+      description: 'Literalmente o preço de uma casa.',
       op1: {
          name:'Mac Pro - CPU 24 núcleos e GPU de 60 núcleos',
          img: img6,
@@ -133,6 +139,7 @@ const products = [
       id:7,
       name: 'iPad',
       img: img7,
+      description: '9ª geração e 10ª geração.',
       op1: {
          name:'iPad de 10ª geração',
          img: img7,
@@ -151,6 +158,7 @@ const products = [
       id:8,
       name: 'iPad Pro',
       img: img8,
+      description: 'Opção com tela Liquid Retina XDR.',
       op1: {
          name:'iPad Pro com tela de 11 polegadas',
          img: img8,
@@ -169,6 +177,7 @@ const products = [
       id:9,
       name: 'iPhone 14 Pro',
       img: img9,
+      description: 'Maravilindo.',
       op1: {
          name:'iPhone 14 Pro',
          img: img9,
@@ -187,6 +196,7 @@ const products = [
       id:10,
       name: 'iPhone 14',
       img: img10,
+      description: 'Maravilindo',
       op1: {
          name:'iPhone 14',
          img: img10,
@@ -205,6 +215,7 @@ const products = [
       id:11,
       name: 'iPhone SE',
       img: img11,
+      description: 'Perfeito se você foi meio pobre.',
       op1: {
          name:'iPhone SE com 64 GB',
          img: img11,
@@ -224,6 +235,7 @@ const products = [
       id:12,
       name: 'Apple Watch Ultra',
       img: img12,
+      description: 'Para pulsos de 130 até 210 mm.',
       op1: {
          name:'Apple Watch Ultra - Pulseira P',
          img: img12,
@@ -242,6 +254,7 @@ const products = [
       id:13,
       name: 'Apple Watch Series 8',
       img: img13,
+      description: 'Um melhor que o outro.',
       op1: {
          name:'Apple Watch Series 8 meia-noite de aço inox',
          img: img13,
@@ -260,6 +273,7 @@ const products = [
       id:14,
       name: 'Apple Watch SE',
       img: img14,
+      description: 'Pulseiras esportivas.',
       op1: {
          name:'Apple Watch SE - Caixa meia-noite de alumínio',
          img: img14,
@@ -278,6 +292,7 @@ const products = [
       id:15,
       name: 'Apple AirPods',
       img: img15,
+      description: 'sonzeiraaaaaaaaa',
       op1: {
          name:'AirPods',
          img: img15,
@@ -296,6 +311,7 @@ const products = [
       id:16,
       name: 'Apple AirPods Max',
       img: img16,
+      description: 'Tem um igualzinho no aliexpress so q ruim. Este aqui é bom.',
       op1: {
          name:'AirPods Max - Cinza-espacial',
          img: img16,
@@ -314,6 +330,7 @@ const products = [
       id:17,
       name: 'Apple TV 4K',
       img: img17,
+      description: 'SKY Gato de rico.',
       op1: {
          name:'Apple TV 4K - Wi-Fi',
          img: img17,
@@ -332,6 +349,7 @@ const products = [
       id:18,
       name: 'Capa de silicone com MagSafe - iPhone 14',
       img: img18,
+      description: 'KKKKKK capinha de 500 conto.',
       op1: {
          name:'Capa de silicone com MagSafe - Amarelo-canário',
          img: img18,
@@ -350,6 +368,7 @@ const products = [
       id:19,
       name: 'Carregador MagSafe',
       img: img19,
+      description: 'Absolutamente tecnologia alienígena.',
       op1: {
          name:'Carregador MagSafe - Cabo de 1m',
          img: img19,
@@ -368,6 +387,7 @@ const products = [
       id:20,
       name: 'Magic Keyboard - iPad Pro de 12,9 pol',
       img: img20,
+      description: 'Cara, compra um da logitech.',
       op1: {
          name:'Magic Keyboard - Inglês (EUA)',
          img: img20,

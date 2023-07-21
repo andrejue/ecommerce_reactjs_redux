@@ -1,5 +1,5 @@
 import React from 'react';
-import M2Logo from '../ipad/images/hero2/m2_chip__buj2soxeo91e_large.png';
+import { Link } from 'react-router-dom';
 
 export default function IpadHero2() {
   return (
@@ -19,9 +19,11 @@ export default function IpadHero2() {
             </p>
 
             <div className="ipad__buy__btn">
-               <button>
-                  Comprar
-               </button>
+               <Link to='/products/7'>
+                  <button>
+                     Comprar
+                  </button>
+               </Link>
                <a href="#">Saiba mais &gt;</a>
             </div>
 

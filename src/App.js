@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Store from './pages/Store';
@@ -10,7 +11,6 @@ import Iphone from './pages/Iphone';
 import Watch from './pages/Watch';
 import Airpods from './pages/Airpods';
 import ProductPage from './pages/ProductPage';
-import CartProduct from './components/CartProduct';
 import Cart from './pages/Cart';
 import Tvhome from './pages/Tvhome';
 
@@ -19,6 +19,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />

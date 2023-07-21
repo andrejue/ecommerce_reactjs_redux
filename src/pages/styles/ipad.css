@@ -255,3 +255,101 @@
    margin-bottom: 0.8rem;
    font-size: 1.2rem;
 }
+
+@media (max-width: 1000px) {
+   .ipad__navbar ul {
+      gap: 1rem;
+   }
+
+   .ipad__hero__1 {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: #000;
+   }
+
+   .ipad__hero__img1 {
+      display: none;
+   }
+
+   .ipad__hero__img2 {
+      display: none;
+   }
+
+   .ipad__hero__title {
+      margin-top: 2rem;
+      width: 100%;
+      height: 100vh;
+      background-image: url(../../../src/components/ipad/images/hero1/fcp_ipad_hero__e663fdl2htea_large.png), url(../../components/ipad/images/hero1/lp_ipad_hero__ec9vtoqzs0a6_large.png);
+      background-position: left bottom, right bottom;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+   }
+
+   .ipad__hero__title p {
+      font-size: 1.6rem;
+      font-weight: 600;
+
+      margin-bottom: 1.8rem;
+   }
+
+   .ipad__hero__title h1 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+   }
+
+   .ipad__hero__2 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      height: 115vh;
+
+      background-position: bottom;
+   }
+
+   .ipad__hero__2 .title__2 {
+      position: initial;
+
+      margin-top: 5rem;
+      width: 250px;
+      height: 257px;
+   }
+
+   .ipad__hero__3 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      height: 115vh;
+      background-position: bottom;
+   }
+
+   .ipad__hero__3 .ipad__pro__title {
+      position: initial;
+
+      margin-top: 5rem;
+      width: 250px;
+      height: 257px;
+   }
+
+}
+
+@media (max-width: 750px) {
+   .ipad__navbar {
+      display: none;
+   }
+
+   .ipad__ribbon {
+      padding: 54px;
+      align-items: stretch;
+   }
+
+   .ipad__hero__title {
+      background-image: url(../../../src/components/ipad/images/hero1/fcp_ipad_hero__e663fdl2htea_large.png);
+      background-position:bottom;
+      background-size:80%;
+      background-repeat: no-repeat;
+   }
+}
