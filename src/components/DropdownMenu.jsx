@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from 'react-router-dom';
+
 
 export default function DropdownMenu(props) {
 
@@ -7,13 +10,27 @@ export default function DropdownMenu(props) {
          <>
             <div className="content__1">
                <p>Comprar</p>
-               <h4>Comprar os lançamentos</h4>
-               <h4>Mac</h4>
-               <h4>iPad</h4>
-               <h4>iPhone</h4>
-               <h4>Apple Watch</h4>
-               <h4>Acessórios</h4>
-               <p>Comprar</p>
+               <Link to='/store'>
+                  <h4>Comprar os lançamentos</h4>
+               </Link>
+               <Link to='/mac'>
+                  <h4>Mac</h4>
+               </Link>
+               <Link to='ipad'>
+                  <h4>iPad</h4>
+               </Link>
+               <Link to='iphone'>
+                  <h4>iPhone</h4>
+               </Link>
+               <Link to='watch'>
+                  <h4>Apple Watch</h4>
+               </Link>
+               <Link to='acessorios'>
+                  <h4>Acessórios</h4>
+               </Link>
+
+                  <p>Comprar</p>
+
             </div>
             <div className="content__2">
                <p>Links Rápidos</p>
@@ -34,13 +51,26 @@ export default function DropdownMenu(props) {
             <div className="content__1">
                <p>Explorar Mac</p>
                <h4>Explorar todos os modelos de Mac</h4>
-               <h4>Macbook Air</h4>
-               <h4>Macbook Pro</h4>
-               <h4>iMac</h4>
-               <h4>Mac mini</h4>
-               <h4>Mac Studio</h4>
-               <h4>Mac Pro</h4>
-               <h4>Monitores</h4>
+               <Link to='/products/1'>
+                  <h4>Macbook Air</h4>
+               </Link>
+               <Link to='/products/2'>
+                  <h4>Macbook Pro</h4>
+               </Link>
+               <Link to='products/3'>
+                  <h4>iMac</h4>
+               </Link>
+               <Link to='products/4'>
+                  <h4>Mac mini</h4>
+               </Link>
+               <Link to='products/5'>
+                  <h4>Mac Studio</h4>
+               </Link>
+               <Link to='products/6'>
+                  <h4>Mac Pro</h4>
+               </Link>
+                  <h4>Monitores</h4>
+
             </div>
             <div className="content__2">
                <p>Comprar Mac</p>
@@ -65,12 +95,24 @@ export default function DropdownMenu(props) {
       {props.item === 'item3' &&
          <>
             <div className="content__1">
-               <p>Explorar iPad</p>
-               <h4>Explorar todos os modelos de iPad</h4>
-               <h4>iPad Pro</h4>
-               <h4>iPad Air</h4>
-               <h4>iPad</h4>
-               <h4>iPad mini</h4>
+               <Link to='/ipad'>
+                  <p>Explorar iPad</p>
+               </Link>
+               <Link to='/ipad'>
+                  <h4>Explorar todos os modelos de iPad</h4>
+               </Link>
+               <Link to='products/8'>
+                  <h4>iPad Pro</h4>
+               </Link>
+               <Link to='products/7'>
+                  <h4>iPad Air</h4>
+               </Link>
+               <Link  to='products/7'>
+                  <h4>iPad</h4>
+               </Link>
+
+                  <h4>iPad mini</h4>
+
                <h4>Apple Pencil</h4>
                <h4>Teclados</h4>
                <p>Por que iPad</p>
@@ -97,12 +139,20 @@ export default function DropdownMenu(props) {
          <>
             <div className="content__1">
                <p>Explorar iPhone</p>
-               <h4>Explorar todos os modelos de iPhone</h4>
-               <h4>iPhone 14 Pro</h4>
-               <h4>iPhone 14</h4>
+               <Link to='iphone'>
+                  <h4>Explorar todos os modelos de iPhone</h4>
+               </Link>
+               <Link to='products/9'>
+                  <h4>iPhone 14 Pro</h4>
+               </Link>
+               <Link to='products/10'>
+                  <h4>iPhone 14</h4>
+               </Link>
                <h4>iPhone 13</h4>
                <h4>iPhone 12</h4>
-               <h4>iPhone SE</h4>
+               <Link to='products/11'>
+                  <h4>iPhone SE</h4>
+               </Link>
                <p>Comprar iPhone</p>
                <p>Mude para o iPhone</p>
             </div>
@@ -128,17 +178,27 @@ export default function DropdownMenu(props) {
          <>
             <div className="content__1">
                <p>Explorar Apple Watch</p>
-               <h4>Explorar todos os modelos de<br/> Apple Watch</h4>
-               <h4>Apple Watch Ultra</h4>
-               <h4>Apple Watch Series 8</h4>
-               <h4>Apple Watch SE</h4>
+               <Link to='watch'>
+                  <h4>Explorar todos os modelos de<br/> Apple Watch</h4>
+               </Link>
+               <Link to='products/12'>
+                  <h4>Apple Watch Ultra</h4>
+               </Link>
+               <Link to='products/13'>
+                  <h4>Apple Watch Series 8</h4>
+               </Link>
+               <Link to='products/14'>
+                  <h4>Apple Watch SE</h4>
+               </Link>
                <h4>Nike</h4>
                <p>Comprar Apple Watch</p>
                <p>Por que Apple Watch</p>
             </div>
             <div className="content__2">
                <p>Comprar Apple Watch</p>
-               <h5>Comprar Apple Watch</h5>
+               <Link to='watch'>
+                  <h5>Comprar Apple Watch</h5>
+               </Link>
                <h5>Pulseiras para Apple Watch</h5>
                <h5>Acessórios para Apple Watch</h5>
                <h5>Financiamento</h5>
@@ -156,11 +216,21 @@ export default function DropdownMenu(props) {
          <>
             <div className="content__1">
                <p>Explorar AirPods</p>
-               <h4>Explorar todos os modelos de<br/> AirPods</h4>
-               <h4>AirPods 2ª geração</h4>
-               <h4>AirPods 3ª geração</h4>
-               <h4>AirPods Pro 2ª geração</h4>
-               <h4>AirPods Max</h4>
+               <Link to='airpods'>
+                  <h4>Explorar todos os modelos de<br/> AirPods</h4>
+               </Link>
+               <Link to='products/15'>
+                  <h4>AirPods 2ª geração</h4>
+               </Link>
+               <Link to='products/15'>
+                  <h4>AirPods 3ª geração</h4>
+               </Link>
+               <Link to='products/15'>
+                  <h4>AirPods Pro 2ª geração</h4>
+               </Link>
+               <Link to='products/16'>
+                  <h4>AirPods Max</h4>
+               </Link>
                <p>Comprar AirPods</p>
             </div>
             <div className="content__2">
@@ -180,8 +250,12 @@ export default function DropdownMenu(props) {
          <>
             <div className="content__1">
                <p>Explorar TV e Casa</p>
-               <h4>Explorar TV e Casa</h4>
-               <h4>Apple TV 4K</h4>
+               <Link to='tv'>
+                  <h4>Explorar TV e Casa</h4>
+               </Link>
+               <Link to='products/17'>
+                  <h4>Apple TV 4K</h4>
+               </Link>
             </div>
             <div className="content__2">
                <p>Comprar TV e Casa</p>
