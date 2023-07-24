@@ -50,6 +50,12 @@
    margin-right: 2rem;
 }
 
+.content__1 a,
+.content__2 a {
+   text-decoration: none;
+   color: #fff;
+}
+
 .dropdown__content__on p {
    color: gray;
    font-size: 0.72rem;

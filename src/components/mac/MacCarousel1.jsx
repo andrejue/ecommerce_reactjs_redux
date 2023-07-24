@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Slider from 'react-slick';
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FaChevronCircleLeft } from "react-icons/fa";
 import carouselData from './data/carouselMacData1';
@@ -6,52 +7,67 @@ import { Link } from 'react-router-dom';
 
 export default function Swiper1() {
 
-   const carousel = useRef(null)
+   const slider = useRef(null);
 
-   const handleLeftClick = (e) => {
-      e.preventDefault();
-      carousel.current.scrollLeft -= carousel.current.offsetWidth * 0.24;
-   }
+   const PrevArrow = (props) => (
+      <div className="slide__btn">
+         <button onClick={() => slider?.current?.slickPrev()}className="custom-prev-arrow">
+            <FaChevronCircleLeft />
+         </button>
+      </div>
+      );
 
-   const handleRightClick = (e) => {
-      e.preventDefault();
-      carousel.current.scrollLeft += carousel.current.offsetWidth * 0.24;
-   }
+      const NextArrow = (props) => (
+      <div className="slide__btn">
+         <button onClick={() => slider?.current?.slickNext()}className="custom-next-arrow">
+            <FaChevronCircleRight />
+         </button>
+      </div>
+      );
+
+   const settings = {
+      dots: false,
+      infinite: false,
+      speed: 200,
+      slidesToScroll: 1,
+      variableWidth: true,
+      arrows: false,
+   };
+
+   const shuffleArray = (array) => {
+      return array.sort(() => Math.random() - 0.5);
+      };
+
+   const shuffledItems = shuffleArray([...carouselData]);
+
 
   return (
 
-   <div className="carousel__container">
-      <div className="title">
-        <h2>Todos os modelos. <span>Escolha o seu.</span></h2>
-      </div>
-      <div className="carousel" ref={carousel}>
-         {carouselData.map((slide) => (
+   <div className='allproducts__carousel__container carousel__container'>
+      <Slider ref={slider} {...settings} className="carousel">
+         {shuffledItems.map((slide) => (
          <div key={slide.id}>
-
-               <div className='carousel__item'>
-                  <h3>{slide.title}</h3>
-                  <img src={slide.img} alt="Product" />
-                  <div className="price">
-                     <p>{slide.p}</p>
-                     <Link className='buy__btn' to={`/products/${slide.id}`}>
-                        Comprar
-                     </Link>
-                  </div>
+            <div className={slide.dark ? 'carousel__item item__dark' : 'carousel__item'}
+               >
+               <div className="item__title">
+                  <h2>{slide.title}</h2>
                </div>
-
+               <img src={slide.img} alt="Product" />
+               <div className="item__buy__btn">
+                  <p>A partir de R$ {slide.p}</p>
+                  <Link to={`/products/${slide.id}`}>
+                     <button className='buy__btn'>
+                        Comprar
+                     </button>
+                  </Link>
+               </div>
+            </div>
          </div>
          ))}
-      </div>
+      </Slider>
+      <PrevArrow />
+      <NextArrow />
 
-      <button className='scroll__btn btn_1' onClick={handleLeftClick}>
-         <FaChevronCircleLeft size={52} className='chevron chevron__left'/>
-      </button>
-
-      <button className='scroll__btn btn_2' onClick={handleRightClick}>
-         <FaChevronCircleRight size={52} className='chevron chevron__right'/>
-      </button>
-
-
-   </div>
+    </div>
   )
 }

@@ -9,8 +9,6 @@ import carouselData from './data/carousel1Data';
 
 export default function Swiper1() {
 
-   const width = document.body.offsetWidth;
-
    const slider = useRef(null);
 
    const PrevArrow = (props) => (
@@ -62,14 +60,6 @@ export default function Swiper1() {
       </Slider>
       <PrevArrow />
       <NextArrow />
-
-      {/* <button className='scroll__btn btn_1' onClick={handleLeftClick}>
-         <FaChevronCircleLeft size={52} className='chevron chevron__left'/>
-      </button>
-
-      <button className='scroll__btn btn_2' onClick={handleRightClick}>
-         <FaChevronCircleRight size={52} className='chevron chevron__right'/>
-      </button> */}
 
    </div>
   )

@@ -9,6 +9,7 @@
    padding-top: 15px;
 
    transition: all .3s cubic-bezier(0,0,.5,1);
+   -webkit-overflow-scrolling: touch;
 }
 
 .mac .carousel__container .title {

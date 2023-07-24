@@ -50,7 +50,9 @@ export default function DropdownMenu(props) {
          <>
             <div className="content__1">
                <p>Explorar Mac</p>
-               <h4>Explorar todos os modelos de Mac</h4>
+               <Link to='mac'>
+                  <h4>Explorar todos os modelos de Mac</h4>
+               </Link>
                <Link to='/products/1'>
                   <h4>Macbook Air</h4>
                </Link>
@@ -281,13 +283,17 @@ export default function DropdownMenu(props) {
             <div className="content__1">
                <p>Explorar Entretenimento</p>
                <h4>Apple One</h4>
-               <h4>Apple TV+</h4>
+               <Link to='tv'>
+                  <h4>Apple TV+</h4>
+               </Link>
                <h4>Apple Music</h4>
                <h4>Apple Arcade</h4>
                <h4>Apple Fitness+</h4>
                <h4>Apple Podcasts</h4>
                <h4>Apple Books</h4>
-               <h4>App Store</h4>
+               <Link to='store'>
+                  <h4>App Store</h4>
+               </Link>
             </div>
             <div className="content__2">
                <p>Suporte</p>

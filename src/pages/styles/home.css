@@ -241,3 +241,15 @@
       flex-direction: column;
    }
 }
+
+@media (max-width: 650px) {
+   .hero__1__container {
+      background-image: url(../images/hero_iphone14_yellow__3.jpg);
+
+   }
+
+   .hero__3__container {
+      background-image: url(../images/hero_macbook_air_15_3.jpg);
+
+   }
+}
