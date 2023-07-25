@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './images/hero1/svgexport-3.svg';
+import { Link } from 'react-router-dom';
 
 
 export default function WatchHero1() {
@@ -21,9 +22,11 @@ export default function WatchHero1() {
          <p>A partir de R$ 858,25/mês ou R$ 10.299*.</p>
 
          <div className="buy__btn__div">
-            <button>
-               Comprar
-            </button>
+            <Link to='/products/12'>
+               <button>
+                  Comprar
+               </button>
+            </Link>
             <a href="#">Saiba mais &gt;</a>
          </div>
 

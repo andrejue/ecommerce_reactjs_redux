@@ -5,7 +5,7 @@ export default function Hero2() {
 
   return (
 
-   <div className="carousel__container">
+   <div className="carousel__container carousel__mac__hero__2">
       <div className="title">
         <h2>Lojas especiais. <span>Preços exclusivos para estudantes, educadores e empresas.</span></h2>
       </div>

@@ -13,14 +13,14 @@ const carousel2Data = [
    {
       id:2,
       name: 'aplecare protection plan',
-      title: 'Receba até três anos de suporte técnico de especialistas Apple e mais opções de reparo de hardware.',
+      title: '3 anos de especialistas Apple e mais opções de reparo de hardware.',
       img: img2
    },
 
    {
       id:3,
       name: 'sessão personalizada online',
-      title: 'Conheça o melhor seu novo Mac. Do básico a dicas avançadas.',
+      title: 'Conheça o melhor seu novo Mac.',
       img: img3
    },
 ]

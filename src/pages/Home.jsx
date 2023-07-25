@@ -2,7 +2,6 @@ import React from 'react';
 import "./styles/home.css";
 import { FiChevronRight } from "react-icons/fi";
 import { SiApple } from "react-icons/si";
-import iphone14 from "./images/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg";
 import M2Logo from "./images/promo_m2_chip__enw2kz91lsuq_large.png";
 import { Link } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ export default function Home() {
           <p className='subhead'>Maravilindo.</p>
           <div className="hero__links">
             <div className="hero__link__div">
-              <a href="#">Saiba mais</a>
+            <Link to='/products/10'>Saiba mais</Link>
               <FiChevronRight size={18} color='#06c'/>
             </div>
             <div className="hero__link__div">
@@ -35,7 +34,7 @@ export default function Home() {
           <p className='subhead'>Pro. E além.</p>
           <div className="hero__links">
             <div className="hero__link__div">
-              <a href="#">Saiba mais</a>
+            <Link to='/products/9'>Saiba mais</Link>
               <FiChevronRight size={18} color='#06c'/>
             </div>
             <div className="hero__link__div">
@@ -48,7 +47,7 @@ export default function Home() {
 
       <div className="hero__3__container">
         <div className="hero__1__content">
-          <h1>MacBook Air de 15 polegadas</h1>
+          <h1 className="fff">MacBook Air de 15 polegadas</h1>
           <p className='subhead'>Espaçoso sem perder a fineza.</p>
           <div className="hero__links">
             <div className="hero__link__div">

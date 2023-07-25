@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function IphoneHero2() {
   return (
@@ -12,9 +13,11 @@ export default function IphoneHero2() {
          <p>A partir de R$ 791,58/mês ou R$ 9.499*</p>
 
          <div className="buy__btn__div">
-            <button>
-               Comprar
-            </button>
+            <Link to='products/9'>
+               <button>
+                  Comprar
+               </button>
+            </Link>
             <a href="#">Saiba mais &gt;</a>
          </div>
 

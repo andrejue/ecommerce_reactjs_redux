@@ -48,21 +48,23 @@ export default function AllProducts() {
       <Slider ref={slider} {...settings} className="carousel">
          {shuffledItems.map((slide) => (
          <div key={slide.id}>
-            <div className={slide.dark ? 'carousel__item item__dark' : 'carousel__item'}>
-               <div className="item__title">
-                  <h2>{slide.name}</h2>
-                  <p>{slide.description}</p>
+            <Link to={`/products/${slide.id}`}>
+               <div className={slide.dark ? 'carousel__item item__dark' : 'carousel__item'}>
+                  <div className="item__title">
+                     <h2>{slide.name}</h2>
+                     <p>{slide.description}</p>
+                  </div>
+                  <img className='products__img' src={slide.img} alt="Product" />
+                  <div className="item__buy__btn">
+                     <p>A partir de R$ {slide.op1.price}</p>
+                     <Link to={`/products/${slide.id}`}>
+                        <button className='buy__btn'>
+                           Comprar
+                        </button>
+                     </Link>
+                  </div>
                </div>
-               <img src={slide.img} alt="Product" />
-               <div className="item__buy__btn">
-                  <p>A partir de R$ {slide.op1.price}</p>
-                  <Link to={`/products/${slide.id}`}>
-                     <button className='buy__btn'>
-                        Comprar
-                     </button>
-                  </Link>
-               </div>
-            </div>
+            </Link>
          </div>
          ))}
       </Slider>

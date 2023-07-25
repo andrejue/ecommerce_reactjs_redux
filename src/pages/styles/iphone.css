@@ -235,8 +235,7 @@
    }
 
    .iphone__ribbon {
-      padding: 54px;
-      align-items: stretch;
+      display: none;
    }
 
    .iphone .iphone__hero__3 .title__se__absolute {
@@ -254,5 +253,11 @@
 
    .iphone .iphone__hero__2 {
       background-image: url(../../components//iphone/images/hero2/hero_iphone_14_pro__e8bufymdlseq_small.jpg);
+   }
+}
+
+@media (max-width: 374px) {
+   .iphone__hero__1 p, .iphone__hero__2 p, .iphone__hero__3 p {
+      font-size: 0.8rem;
    }
 }

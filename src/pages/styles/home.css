@@ -14,6 +14,7 @@
    background-image: url(../images/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg);
    background-repeat: no-repeat;
    background-position: center;
+   background-color: #FAFAFA;
 }
 
 .hero__1__content > img {
@@ -245,11 +246,61 @@
 @media (max-width: 650px) {
    .hero__1__container {
       background-image: url(../images/hero_iphone14_yellow__3.jpg);
+      height: 90vh;
+   }
 
+   .hero__2__container {
+      height: 90vh;
    }
 
    .hero__3__container {
       background-image: url(../images/hero_macbook_air_15_3.jpg);
 
+   }
+}
+
+@media (max-width: 415px) {
+   .hero__1__container {
+      background-image: url(../images/hero_iphone14_yellow__4.jpg);
+      background-color: #FAFAFA;
+   }
+
+   .hero__2__container {
+      background-image: url(../images/hero_iphone14pro_3.jpg);
+   }
+
+   .hero__3__container {
+      background-image: url(../images/hero_macbook_air_15_3.jpg);
+
+   }
+}
+
+@media (max-width: 415px) {
+
+   .hero__2__container .fff {
+      font-size: 3rem;
+   }
+
+   .hero__3__container {
+      height: 70vh;
+      background-image: url(../images/hero_macbook_air_15_4.jpg);
+   }
+
+   .hero__3__container .fff {
+      font-size: 2.5rem;
+   }
+   
+
+   .hero__3__container .subhead {
+      font-size: 1.1rem;
+   }
+}
+
+@media (max-height: 585px) {
+   .hero__1__container {
+      height: 95vh;
+   }
+   .hero__3__container {
+      height: 90vh;
    }
 }

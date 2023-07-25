@@ -353,3 +353,14 @@
       background-repeat: no-repeat;
    }
 }
+
+@media (max-width: 380px) {
+
+   .ipad__hero__1 p {
+      font-size: 1rem;
+   }
+
+   .ipad__hero__1 h1 {
+      font-size: 2.4rem;
+   }
+}

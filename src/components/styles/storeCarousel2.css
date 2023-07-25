@@ -25,8 +25,8 @@
    }
 }
 
-@media (max-width: 700px) {
-   .carousel__container__2 .carousel :first-child {
-
+@media (max-width: 500px) {
+   .carousel__container__2 {
+      display: none;
    }
 }

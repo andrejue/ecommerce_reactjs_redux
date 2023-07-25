@@ -230,3 +230,23 @@
       display: none;
    }
 }
+
+@media (max-width: 420px) {
+   .watch__hero__1 {
+      background-image: url('../../components/watch/images/hero1/hero_ultra__ej2pfpkgr2ie_medium.jpg');
+   }
+
+   .watch__hero__1 h1, .watch__hero__2 h1, .watch__hero__3 h1 {
+      font-size: 2rem;
+   }
+
+   .watch__hero__1 p, .watch__hero__2 p, .watch__hero__3 p {
+      font-size: 0.9rem;
+   }
+}
+
+@media (max-height: 730px) {
+   .watch__hero__1 {
+      background-image: url('../../components/watch/images/hero1/hero_ultra__ej2pfpkgr2ie_small.jpg');
+   }
+}

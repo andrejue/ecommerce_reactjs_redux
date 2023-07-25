@@ -12,14 +12,16 @@
 }
 
 .carousel__container .carousel {
-
-   overflow-x: hidden;
    display: flex;
    scroll-behavior: smooth;
    align-items: center;
    width: 100%;
-   height: 530px;
+   height: auto;
 
+}
+
+.carousel__container .carousel a {
+   text-decoration: none;
 }
 
 .allproducts__carousel__container .item__title {
@@ -196,7 +198,86 @@
       font-size: 1.4rem;
    }
 
+   .carousel__container {
+      margin-top: 0;
+   }
+
    .carousel__container .carousel {
       margin-left: 20.5%;
    }
+}
+
+@media (max-width: 500px) {
+
+   .carousel__container .carousel {
+      height: 460px;
+   }
+
+   .carousel__container .title h2 {
+      font-size: 1.1rem;
+   }
+
+   .carousel__container .carousel__item {
+      display: flex;
+      flex-direction: column;
+
+
+      width: 300px;
+      height: 440px;
+   }
+
+   .carousel__item h3 {
+      font-size: 1.3rem;
+   }
+
+   .slide__btn {
+      display: none;
+   }
+
+}
+
+@media (max-width: 350px) {
+
+   .carousel__container .carousel {
+      height: 356px;
+   }
+
+   .carousel__container .carousel__item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      width: 200px;
+      height: 340px;
+
+      background-position: bottom;
+   }
+
+   .allproducts__carousel__container .carousel__item h2 {
+      font-size: 1.1rem;
+   }
+
+   .allproducts__carousel__container .carousel__item p {
+      font-size: 0.7rem;
+   }
+
+   .allproducts__carousel__container .carousel__item .products__img {
+      width: 90%;
+   }
+
+   .carousel__item .item__name {
+      font-size: 0.5rem;
+   }
+
+   .carousel__item h3 {
+      font-size: 1.4rem;
+   }
+
+   .carousel__item p {
+      font-size: 0.7rem;
+   }
+
+   .buy__btn {
+      display: none;
+   }
+
 }
