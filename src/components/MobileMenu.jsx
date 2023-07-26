@@ -41,7 +41,7 @@ export default function MobileMenu() {
             onDragStart={handleDragStart}
             onTouchStart={handleTouchStart}
             onDrag={handleDrag}
-            onTouchMove={closeMobileMenu}>
+            onTouchMove={handleDrag}>
                <nav className={activeMobileMenu ? 'mobile__nav__on' : 'mobile__nav__off'}
 
                   >
