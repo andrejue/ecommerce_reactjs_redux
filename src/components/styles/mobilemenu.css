@@ -66,6 +66,25 @@
    animation: float 4s ease-in-out infinite;
 }
 
+@media (max-width: 1000px) {
+   .mobile__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .mobile__nav .close__btn {
+      transform: translateY(-40px);
+   }
+}
+
+@media (max-width: 340px) {
+
+   .mobile__nav__ul li {
+      font-size: 1.2rem;
+   }
+}
+
 @keyframes float {
 	0% {
 		transform: translatey(0px);

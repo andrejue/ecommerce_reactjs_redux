@@ -46,8 +46,9 @@ export default function MobileMenu() {
                onTouchStart={handleTouchStart}
                onTouchMove={handleTouchMove}
                onTouchEnd={handleTouchEnd}
+               style={{position:'relative'}}
             >
-               <nav className={activeMobileMenu ? 'mobile__nav__on' : 'mobile__nav__off'}
+               <nav className={activeMobileMenu ? 'mobile__nav__on mobile__nav' : 'mobile__nav__off mobile__nav'}
 
                   >
                   <ul className='mobile__nav__ul'>
