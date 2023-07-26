@@ -20,24 +20,22 @@ export default function MobileMenu() {
    const [deslocamentoY, setDeslocamentoY] = useState(0);
 
    const handleTouchStart = (e) => {
-      // Armazene a posição inicial do toque para calcular o deslocamento posteriormente
       e.target.dataset.startY = e.touches[0].clientY;
    };
 
    const handleTouchMove = (e) => {
       const startY = parseFloat(e.target.dataset.startY);
-      const deltaY = e.touches[0].clientY - startY;
+      const deltaY = startY - e.touches[0].clientY;
 
       setDeslocamentoY(deltaY);
    };
 
    const handleTouchEnd = () => {
 
-      const xPixelsThreshold = 30;
+      const xPixelsThreshold = 40;
 
       if (deslocamentoY > xPixelsThreshold) {
-         // Faz algo quando o deslocamento for maior que 'x' pixels
-         console.log('Deslocamento maior que x pixels:', deslocamentoY);
+         closeMobileMenu();
       }
 
       setDeslocamentoY(0);
@@ -98,7 +96,7 @@ export default function MobileMenu() {
                   </ul>
                   <div className="close__btn">
                      <button onClick={closeMobileMenu}>
-                        <BsChevronCompactUp size={50}/>
+                        <BsChevronCompactUp size={80}/>
                      </button>
                   </div>
                </nav>

@@ -133,11 +133,7 @@ export default function Header() {
                      <RxHamburgerMenu size={28}/>
                   </Link>
                </div>
-               <div className={activeMobileMenu ? 'close__hamburguer__btn' : 'close__hamburguer__btn__off'}>
-                  <Link onClick={closeMobileMenu}>
-                     <AiOutlineClose size={28}/>
-                  </Link>
-               </div>
+               
                <div className='cart'>
                   <Link onClick={() => handleMouseEnter('cart')}>
                      <img src={ShoppingBag} alt="Sacola de compras" />
