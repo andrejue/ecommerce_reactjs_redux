@@ -16,7 +16,7 @@ export default function Footer() {
 
         <div className="footer__2">
           <div>
-            <ul>
+            <ul className='footer__2__ul'>
               <p>Descobrir e Comprar</p>
               <li>Loja</li>
               <li>Mac</li>

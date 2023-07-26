@@ -83,7 +83,7 @@ export default function ProductPage() {
                      <p>Frete grátis</p>
                   </div>
                   <div className="specialist">
-                     <p>Tem alguma dúvida sobre a compra do {filteredProduct[0].name}?</p>
+                     <p>Tem alguma dúvida sobre a compra de {filteredProduct[0].name}?</p>
                      <a href="#">Converse com um especialista Apple.</a>
                   </div>
                </div>
