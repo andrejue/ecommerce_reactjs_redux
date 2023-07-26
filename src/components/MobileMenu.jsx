@@ -1,5 +1,6 @@
 import "./styles/header.css";
 import "./styles/dropdown.css";
+import { useState } from "react";
 import { BsChevronCompactUp } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -16,32 +17,38 @@ export default function MobileMenu() {
       dispatch(menuClose(false))
    }
 
-   const handleDragStart = (e) => {
-   e.dataTransfer.setData('text/plain', e.target.id);
-   };
+   const [deslocamentoY, setDeslocamentoY] = useState(0);
 
    const handleTouchStart = (e) => {
-   e.dataTransfer.setData('text/plain', e.target.id);
-   e.target.dataset.startY = e.touches[0].clientY;
+      // Armazene a posição inicial do toque para calcular o deslocamento posteriormente
+      e.target.dataset.startY = e.touches[0].clientY;
    };
 
-   const handleDrag = (e) => {
-   const startY = parseFloat(e.target.dataset.startY);
-   const deltaY = e.clientY - startY;
+   const handleTouchMove = (e) => {
+      const startY = parseFloat(e.target.dataset.startY);
+      const deltaY = e.touches[0].clientY - startY;
 
-   if (deltaY < 0) {
-      e.preventDefault();
-      e.dataTransfer.dropEffect = 'move';
-      closeMobileMenu();
-   }
+      setDeslocamentoY(deltaY);
+   };
+
+   const handleTouchEnd = () => {
+
+      const xPixelsThreshold = 30;
+
+      if (deslocamentoY > xPixelsThreshold) {
+         // Faz algo quando o deslocamento for maior que 'x' pixels
+         console.log('Deslocamento maior que x pixels:', deslocamentoY);
+      }
+
+      setDeslocamentoY(0);
    };
 
    return (
-            <div draggable="true"
-            onDragStart={handleDragStart}
-            onTouchStart={handleTouchStart}
-            onDrag={handleDrag}
-            onTouchMove={handleDrag}>
+            <div
+               onTouchStart={handleTouchStart}
+               onTouchMove={handleTouchMove}
+               onTouchEnd={handleTouchEnd}
+            >
                <nav className={activeMobileMenu ? 'mobile__nav__on' : 'mobile__nav__off'}
 
                   >
