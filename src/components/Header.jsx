@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./styles/header.css";
 import "./styles/dropdown.css";
 import { Link } from 'react-router-dom';
@@ -34,6 +34,12 @@ export default function Header() {
   const productsCount = useSelector(selectProductsCount)
   const activeMobileMenu = useSelector(rootReducer =>
    rootReducer.menuReducer);
+
+  if (activeMobileMenu) {
+    document.body.classList.add('no__scroll')
+  } else {
+    document.body.classList.remove('no__scroll')
+  }
 
   const dispatch = useDispatch();
   if (dropdownWrapper) {
@@ -133,7 +139,7 @@ export default function Header() {
                      <RxHamburgerMenu size={28}/>
                   </Link>
                </div>
-               
+
                <div className='cart'>
                   <Link onClick={() => handleMouseEnter('cart')}>
                      <img src={ShoppingBag} alt="Sacola de compras" />

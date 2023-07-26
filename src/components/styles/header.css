@@ -120,6 +120,10 @@ header .cart__quantity__none {
    display: none;
 }
 
+.no__scroll {
+   overflow: hidden;
+}
+
 @media (max-width: 990px) {
    header nav {
       display: none;
