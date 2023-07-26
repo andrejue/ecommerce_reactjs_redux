@@ -6,10 +6,10 @@ export default function TvHero1() {
   return (
     <section className='tv__hero__1__container'>
       <div className="tv__banner">
-        <img src={Banner} alt="" />
+        
       </div>
       <div className="tv__hero__img">
-        <img src={Tv} alt="" />
+        <img src={Tv} alt="Apple TV+" />
       </div>
       <div className="tv__title">
         <h2>Convide o futuro para <br />entrar na sua casa.</h2>

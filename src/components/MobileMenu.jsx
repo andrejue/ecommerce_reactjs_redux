@@ -16,9 +16,35 @@ export default function MobileMenu() {
       dispatch(menuClose(false))
    }
 
+   const handleDragStart = (e) => {
+   e.dataTransfer.setData('text/plain', e.target.id);
+   };
+
+   const handleTouchStart = (e) => {
+   e.dataTransfer.setData('text/plain', e.target.id);
+   e.target.dataset.startY = e.touches[0].clientY;
+   };
+
+   const handleDrag = (e) => {
+   const startY = parseFloat(e.target.dataset.startY);
+   const deltaY = e.clientY - startY;
+
+   if (deltaY < 0) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      closeMobileMenu();
+   }
+   };
+
    return (
-            <>
-               <nav className={activeMobileMenu ? 'mobile__nav__on' : 'mobile__nav__off'} >
+            <div draggable="true"
+            onDragStart={handleDragStart}
+            onTouchStart={handleTouchStart}
+            onDrag={handleDrag}
+            onTouchMove={closeMobileMenu}>
+               <nav className={activeMobileMenu ? 'mobile__nav__on' : 'mobile__nav__off'}
+
+                  >
                   <ul className='mobile__nav__ul'>
 
                      <li
@@ -69,7 +95,7 @@ export default function MobileMenu() {
                      </button>
                   </div>
                </nav>
-            </>
+            </div>
 
   )
 }
