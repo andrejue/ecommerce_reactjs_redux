@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./styles/header.css";
 import "./styles/dropdown.css";
 import { Link } from 'react-router-dom';
 import { SiApple } from "react-icons/si";
-import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import ShoppingBag from './svg/header/svgexport-25.svg'
 import DropdownMenu from './DropdownMenu';
@@ -13,7 +13,8 @@ import Cart from './CartComponent';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectProductsCount } from '../redux/cart/cart.selectors';
 import { addBlur, removeBlur } from '../redux/blur/actions';
-import { menuOpen, menuClose } from '../redux/mobilemenu/actions';
+import { menuOpen } from '../redux/mobilemenu/actions';
+import { mobileCartOpen } from '../redux/mobilecart/actions';
 import Loja from './svg/header/svgexport-4.svg';
 import Mac from './svg/header/svgexport-8.svg';
 import Ipad from './svg/header/svgexport-9.svg';
@@ -25,46 +26,49 @@ import Entretenimento from './svg/header/svgexport-14.svg';
 import Acessorios from './svg/header/svgexport-15.svg';
 import Suporte from './svg/header/svgexport-16.svg';
 import MobileMenu from './MobileMenu';
+import MobileCart from './MobileCart';
 
 export default function Header() {
 
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const [dropdownWrapper, setDropdownWrapper] = useState(false);
+   const [activeDropdown, setActiveDropdown] = useState(null);
+   const [dropdownWrapper, setDropdownWrapper] = useState(false);
 
-  const productsCount = useSelector(selectProductsCount)
-  const activeMobileMenu = useSelector(rootReducer =>
-   rootReducer.menuReducer);
+   const productsCount = useSelector(selectProductsCount)
+   const activeMobileMenu = useSelector(rootReducer =>
+      rootReducer.menuReducer);
+   const activeMobileCart = useSelector(rootReducer =>
+      rootReducer.mobileCartReducer);
 
-  if (activeMobileMenu) {
-    document.body.classList.add('no__scroll')
-  } else {
-    document.body.classList.remove('no__scroll')
-  }
+   if (activeMobileMenu || activeMobileCart) {
+      document.body.classList.add('no__scroll')
+   } else {
+      document.body.classList.remove('no__scroll')
+   }
 
-  const dispatch = useDispatch();
-  if (dropdownWrapper) {
-   dispatch(addBlur(true))
-  } else {
-   dispatch(removeBlur(false))
-  }
+   const dispatch = useDispatch();
+   if (dropdownWrapper) {
+      dispatch(addBlur(true))
+   } else {
+      dispatch(removeBlur(false))
+   }
 
-  const openMobileMenu = () => {
-   dispatch(menuOpen(true))
-  }
+   const openMobileMenu = () => {
+      dispatch(menuOpen(true))
+   }
 
-  const closeMobileMenu = () => {
-   dispatch(menuClose(false))
-  }
+   const openMobileCart = () => {
+      dispatch(mobileCartOpen(true))
+   }
 
-  const handleMouseEnter = (itemId) => {
-    setActiveDropdown(itemId);
-    setDropdownWrapper(true);
-  };
+   const handleMouseEnter = (itemId) => {
+      setActiveDropdown(itemId);
+      setDropdownWrapper(true);
+   };
 
-  const handleMouseLeave = () => {
-    setActiveDropdown(null);
-    setDropdownWrapper(false);
-  };
+   const handleMouseLeave = () => {
+      setActiveDropdown(null);
+      setDropdownWrapper(false);
+   };
 
    return (
       <>
@@ -134,9 +138,19 @@ export default function Header() {
                      <AiOutlineSearch />
                   </Link>
                </div>
-               <div className={activeMobileMenu ? 'hamburguer__btn__off' : 'hamburguer__btn'}>
+               <div className={activeMobileMenu || activeMobileCart ? 'hamburguer__btn__off' : 'hamburguer__btn'}>
                   <Link onClick={openMobileMenu}>
                      <RxHamburgerMenu size={28}/>
+                  </Link>
+               </div>
+               <div className={activeMobileCart || activeMobileMenu ? 'hamburguer__btn__off' : 'hamburguer__btn'}>
+                  <Link onClick={openMobileCart}>
+                     <img src={ShoppingBag} alt="Sacola de compras" />
+                     <div className={productsCount < 1
+                        ? 'cart__quantity__none'
+                        : 'cart__quantity'}>
+                        {productsCount}
+                     </div>
                   </Link>
                </div>
 
@@ -196,6 +210,7 @@ export default function Header() {
          </div>
          <Blur />
          <MobileMenu />
+         <MobileCart />
       </>
 
   )

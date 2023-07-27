@@ -8,7 +8,8 @@ main .cart__container {
 
 .cart__product {
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
+   padding: 0 1rem;
    align-items: center;
    gap: 1rem;
 
@@ -18,12 +19,17 @@ main .cart__container {
 .cart__page, .cart__component {
    width: 980px;
 
-   padding: 5rem 0;
+   padding: 4rem 0;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    align-self: center;
+}
+
+.product__cart {
+   display: flex;
+   flex-direction: row;
 }
 
 .cart__title {
@@ -32,10 +38,10 @@ main .cart__container {
 }
 
 .cart__item {
+   width: 100%;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
-   gap: 1rem;
 }
 
 .cart__item img {
@@ -46,8 +52,12 @@ main .cart__container {
 .cart__item .item__info {
    display: flex;
    flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
 
-   width: 600px;
+   width: 100%;
+
+   margin-left: 1rem;
 }
 
 .cart__item button {
@@ -66,6 +76,11 @@ main .cart__container {
    cursor: pointer;
    font-size: 0.7rem;
    color: #e24141;
+}
+
+.product__quant {
+   display: flex;
+   align-items: center;
 }
 
 .cart__component .totalprice {

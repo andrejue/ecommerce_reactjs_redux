@@ -124,6 +124,28 @@ header .cart__quantity__none {
    overflow: hidden;
 }
 
+@media (max-width: 1000px) {
+
+   header .cart {
+      display: none;
+   }
+
+   header .cart__quantity {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 0.9rem;
+      height: 0.9rem;
+
+      font-size: 0.8rem;
+
+      position: absolute;
+      top: 14px;
+      right: 20px;
+   }
+}
+
 @media (max-width: 990px) {
    header nav {
       display: none;
