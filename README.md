@@ -11,3 +11,4 @@ You can see it working (vercel app) here:
 <img src="/src/images/Responsividade_3.jpg">
 <img src="/src/images/Responsividade_4.jpg">
 <img src="/src/images/Responsividade_5.jpg">
+<hr>
